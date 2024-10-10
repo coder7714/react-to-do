@@ -33,7 +33,7 @@ function App() {
   };
 
   const removeTask = (index) => {
-    const newTasks = tasks.filter((_, i) => i === index);
+    const newTasks = tasks.filter((_, i) => i !== index);
     setTasks(newTasks);
   };
 
